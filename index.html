@@ -112,7 +112,7 @@
    
    
    <h3>Conclusion</h3>  
-   <p>Good and Bad are just one perspective. Bananas are good for monkeys, but monkeys are not good for bananas. Let's not make a big deal out of it...
+   <p><span class="good">GOOD</span> and <span class="bad">BAD</span> are just one perspective. Bananas are <span class="good">GOOD</span>good for monkeys, but monkeys are not <span class="good">GOOD</span> for bananas. Let's not make a big deal out of it...
     </p>
 
 
@@ -135,49 +135,53 @@
    <a href="https://wellsbaum.blog/2018/01/27/alan-watts-the-story-of-the-chinese-farmer/" target="_blank">Article original</a>
 
    <div class="notification">Nouvelle sagesse disponible !</div>
+ </footer>
+
 
 
   <style>
+
     footer {
     text-align: center;
     font-size: small;
     margin-top: 20px;
     padding: 10px;
     border-top: 1px solid #ccc;
-  }
+   }
     .good {
      color: green;
      font-weight: bold;
-  }
+   }
    .bad {
      color: red;
      font-weight: bold;
-  }
+   }
     a {
    color: blue;            
    text-decoration: none;    
    font-weight: bold;       
-  }
+   }
 
    a:hover {
    color: red;            
    text-decoration: underline; 
-  }
+   }
 
    a:visited {
     color: purple;            
-  }
+    }
+    
 
    a:active {
-   color: orange;            
-  } 
+     color: orange;            
+   } 
    body {
     width: 90%;
     margin : 0 auto ;
    background: linear-gradient(80deg, #1dbb3fff, #fcfcffff);
-        font-style: italic;
-        color: gray;
-         background-image: url('https://img.freepik.com/vecteurs-libre/visitez-banniere-web-chine-service-voyage-asiatique-invitation-voyager-dans-village-chinois-vieilles-maisons-typiques-traditionnelles-guirlande-lanternes-paysage-pittoresque_107791-5688.jpg');
+         font-style: italic;
+         color: gray;
+        background-image: url('https://img.freepik.com/vecteurs-libre/visitez-banniere-web-chine-service-voyage-asiatique-invitation-voyager-dans-village-chinois-vieilles-maisons-typiques-traditionnelles-guirlande-lanternes-paysage-pittoresque_107791-5688.jpg');
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
@@ -199,8 +203,7 @@
    }
    blockquote.farmer {
    border-color: green;
-
- }  
+   }
    blockquote.villager {
    border-color: red;     }
    blockquote.good {
@@ -208,8 +211,7 @@
    }     
    blockquote.bad {
    border-color: red;      
-
-   } 
+    } 
 
    .good, .bad {
    text-transform: uppercase;
@@ -259,9 +261,9 @@
    table tr:nth-child(even) {
    background-color: #9e9e9eff; 
     }
-   table tr:nth-child(odd) {
-   background-color: #ffffff; 
-   } 
+    table tr:nth-child(odd) {
+    background-color: #ffffff;
+    } 
 
    .good {
    background-image: url('Content/3.html-css/0.progressive-enhancement/assets/bien.png');
@@ -269,6 +271,8 @@
    background-position: right center;
    padding-right: 60px;
    }
+   
+
 
    .wrong {
    background-image: url('Content/3.html-css/0.progressive-enhancement/assets/mal.png');
@@ -277,6 +281,7 @@
    padding-right: 10px;
    }
 
+   
    .chat {
    background-image: url('Content/3.html-css/0.progressive-enhancement/assets/chat.png');
    background-repeat: no-repeat;
@@ -431,9 +436,11 @@
    }
 
    .flex-img {
-   width: 250px;               /* taille de l’image */
+   width: 50px;               /* taille de l’image */
    height: auto;               /* conserve les proportions */
-   }
+    border-radius: 20px;       /* coins arrondis */
+
+    } 
  
    .good {
    color: green;
@@ -446,53 +453,78 @@
    font-weight: bold;
     text-transform: uppercase;
    }
-   table tr:nth-child(even) {
-    background-color: #a19f9fff;
+    table tr:nth-child(even) {
+          background-color: #a19f9fff;
+    
+          }   
+          table tr:nth-child(odd) {
+          background-color: #ffffff;
    }
-   table tr:nth-child(odd) {
-    background-color: #ffffff;
-   }
-      .good-item {
-        background-image: url('assets/bien.png');
-   }
+         .good-item {
+          background-image: url('assets/bien.png');
+     }
 
-     .bad-item {
-       background-image: url('assets/mal.png');
-   }
-
-    .chat-item {
-      background-image: url('assets/chat.png');
-   }
-     .good-item {
-     background-image: url('bien.png');
-     background-repeat: no-repeat;
-     background-position: right center;
-     padding-right: 60px;
-
-  }
-
- .bad-item {
-  background-image: url('mal.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 60px;
- }
-
- .chat-item {
-  background-image: url('chat.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 80px;
- }
+       .bad-item {
+          background-image: url('assets/mal.png');
+     }
 
 
+      .chat-item {
 
-
+        background-image: url('assets/chat.png');
+      }
 
   
-           
-   </style>
-   </footer>
+
+
+      .good-item {
+
+      background-image: url('bien.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 60px; 
+      
     
-  </body> 
+    }
+      .bad-item {
+
+      background-image: url('mal.png');
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 60px;
+
+      }
+
+
+
+      .chat-item {
+     background-image: url('chat.png');
+     background-repeat: no-repeat;
+     background-position: right center;
+     padding-right: 80px; }
+
+      .flex-container {
+     display: flex;
+     justify-content: flex-start; /* image à gauche, texte à droite */
+     align-items: center;
+     gap: 20px; /* espace entre image et texte */
+     margin-bottom: 30px;
+      }
+     .flex-img {    
+     max-width: 150px;
+     height: auto;
+     border-radius: 10px;
+      }
+
+
+     </style>
+  
+   </body>
+  
  </html>
+
+
+
+    
+
+
